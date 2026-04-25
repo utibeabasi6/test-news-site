@@ -1,0 +1,12 @@
+version: 1
+
+services:
+  web:
+    kind: web
+    build:
+      path: .
+    expose: 80
+    health:
+      path: /
+      status: 200
+      timeout: 30s
