@@ -5,8 +5,4 @@ services:
     kind: web
     build:
       path: .
-    expose: 3000
-    health:
-      path: /
-      status: 200
-      timeout: 30s
+    expose: 80
